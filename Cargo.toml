@@ -1,0 +1,20 @@
+[package]
+name = "dev-tool"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+yew = {version =  "0.21", features = ["csr"]}
+serde = "1.0.217"
+reqwasm = "0.5.0"
+gloo = "0.11.0"
+yew-router = "0.18.0"
+# monaco = { version = "0.5.0", features = ["yew-components"] }
+
+[dependencies.web-sys]
+version = "0.3.77"
+features = [
+    "HtmlInputElement",
+]

@@ -1,0 +1,14 @@
+[build]
+target = "index.html"
+dist = "dist"
+release = false
+public_url = "/dev-tool/"
+
+[watch]
+watch = ["./index.html", "src/", "css/", "static/"]
+
+
+[[hooks]]
+stage = "pre_build"
+command = "cp"
+command_arguments = ["-r", "css", "dist"]
