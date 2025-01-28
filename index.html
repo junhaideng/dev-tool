@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
-  <link rel="stylesheet" href="/dev-tool/index-597d90855083f957.css" integrity="sha384&#x2D;7GZOiJ7WwbJ2PKz3iZ2Vt&#x2F;NHNz65guUjQZ&#x2F;uo6o2LYkbO&#x2F;Al8pImelhUBJCReJw&#x2B;"/>
-  <title>yew template</title>
-<link rel="modulepreload" href="/dev-tool/dev-tool-2690a7e0007c54f9.js" crossorigin="anonymous" integrity="sha384-Oz9r2tmdpD0s5ymm3WMQhT9vQVBAfMdyyNn1UwxHtprogOOAQGoImUY0rRe3LWw1"><link rel="preload" href="/dev-tool/dev-tool-2690a7e0007c54f9_bg.wasm" crossorigin="anonymous" integrity="sha384-fmthtOLByjvoECFonSWXVxRXAL5uXmZ0JMcrH5BLkBcXsk4aTZazn6zR6dMSEW9K" as="fetch" type="application/wasm"></head>
-<body>
-
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1.0,minimum-scale=1.0"
+    />
+    <link rel="stylesheet" href="/dev-tool/index-597d90855083f957.css" integrity="sha384&#x2D;7GZOiJ7WwbJ2PKz3iZ2Vt&#x2F;NHNz65guUjQZ&#x2F;uo6o2LYkbO&#x2F;Al8pImelhUBJCReJw&#x2B;"/>
+    <title>yew template</title>
+  <link rel="modulepreload" href="/dev-tool/dev-tool-c28faf8f6fbe6d3c.js" crossorigin="anonymous" integrity="sha384-Oz9r2tmdpD0s5ymm3WMQhT9vQVBAfMdyyNn1UwxHtprogOOAQGoImUY0rRe3LWw1"><link rel="preload" href="/dev-tool/dev-tool-c28faf8f6fbe6d3c_bg.wasm" crossorigin="anonymous" integrity="sha384-NZnW2ErDxkDTQP0DB7Xa3L1YE4+USVSpUmU6DTk2ooeif9iskcwdJBFu7TxdH00r" as="fetch" type="application/wasm"></head>
+  <body>
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      // This script checks to see if a redirect is present in the query string,
+      // converts it back into the correct url and adds it to the
+      // browser's history using window.history.replaceState(...),
+      // which won't cause the browser to attempt to load the new url.
+      // When the single page app is loaded further down in this file,
+      // the correct url will be waiting in the browser's history for
+      // the single page app to route accordingly.
+      (function (l) {
+        if (l.search[1] === "/") {
+          var decoded = l.search
+            .slice(1)
+            .split("&")
+            .map(function (s) {
+              return s.replace(/~and~/g, "&");
+            })
+            .join("?");
+          window.history.replaceState(
+            null,
+            null,
+            l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      })(window.location);
+    </script>
+    <!-- End Single Page Apps for GitHub Pages -->
+  
 <script type="module">
-import init, * as bindings from '/dev-tool/dev-tool-2690a7e0007c54f9.js';
-const wasm = await init({ module_or_path: '/dev-tool/dev-tool-2690a7e0007c54f9_bg.wasm' });
+import init, * as bindings from '/dev-tool/dev-tool-c28faf8f6fbe6d3c.js';
+const wasm = await init({ module_or_path: '/dev-tool/dev-tool-c28faf8f6fbe6d3c_bg.wasm' });
 
 
 window.wasmBindings = bindings;
