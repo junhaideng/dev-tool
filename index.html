@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+  <link rel="stylesheet" href="/dev-tool/index-597d90855083f957.css" integrity="sha384&#x2D;7GZOiJ7WwbJ2PKz3iZ2Vt&#x2F;NHNz65guUjQZ&#x2F;uo6o2LYkbO&#x2F;Al8pImelhUBJCReJw&#x2B;"/>
+  <title>yew template</title>
+<link rel="modulepreload" href="/dev-tool/dev-tool-2690a7e0007c54f9.js" crossorigin="anonymous" integrity="sha384-Oz9r2tmdpD0s5ymm3WMQhT9vQVBAfMdyyNn1UwxHtprogOOAQGoImUY0rRe3LWw1"><link rel="preload" href="/dev-tool/dev-tool-2690a7e0007c54f9_bg.wasm" crossorigin="anonymous" integrity="sha384-fmthtOLByjvoECFonSWXVxRXAL5uXmZ0JMcrH5BLkBcXsk4aTZazn6zR6dMSEW9K" as="fetch" type="application/wasm"></head>
+<body>
+
+<script type="module">
+import init, * as bindings from '/dev-tool/dev-tool-2690a7e0007c54f9.js';
+const wasm = await init({ module_or_path: '/dev-tool/dev-tool-2690a7e0007c54f9_bg.wasm' });
+
+
+window.wasmBindings = bindings;
+
+
+dispatchEvent(new CustomEvent("TrunkApplicationStarted", {detail: {wasm}}));
+
+</script></body>
+</html>
